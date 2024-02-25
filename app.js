@@ -57,10 +57,21 @@ if (usersName == "Alice") {
 
 
 
-
 function addTwoNumbers (num1, num2) {
     let sum = num1 + num2;
     console.log("Sum is:", sum);
     return sum;
 }
 
+function rateMyPage(){
+
+    let rating = prompt("How would you rate my page ? 1-5 ");
+
+    console.log(rating)
+
+    for (let i=0; i < rating; i++) {
+        document.write("<img class='loop-img' src='images.jpeg' />");
+   //     document.write("hello this should be a picture");
+
+}
+}
