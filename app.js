@@ -6,10 +6,22 @@ alert("Welcome to my page!!!");
 // greetuser();
 
 
+
+
 function getName() {
-const usersName = prompt("Please select one of the 5 names(Alice, Bob, Charlie, Barbie or Stranger)");
+let acceptedNames = ['Alice','Bob','Charlie','Barbie','Stranger'];
+let usersName = '';
+while(!acceptedNames.includes(usersName)){
+    const usersName = prompt("Please select one of the 5 names(Alice, Bob, Charlie, Barbie or Stranger)");
+if (!acceptedNames.includes(usersName)) {
+    alert("That name is not accepted. Please try again..");
+}
+if(acceptedNames.includes(usersName))
 return usersName;
 }
+}
+
+
 // console.log(theirName);
 
 function greetuser() {
@@ -18,36 +30,36 @@ document.write("Hiya " +  theirName + " - Welcome to my page!!!")
 }
 
 function specialMessage(usersName){
-if (usersName == ""){
+while (usersName == ""){
     usersName = prompt("Come on, please tell me your name");
 }
 if (usersName == "Alice") {
-    let result = confirm("Do you want to proceed");
+    let result = confirm("Thanks, Welcome to my page - Do you want to proceed");
     if (result) {
         alert("You clicked Ok!")
     }
     document.write (" Happy to have you here");
 
 } else if (usersName =="Bob") {
-    let result = confirm("Do you want to proceed");
+    let result = confirm("Thanks, Welcome to my page - Do you want to proceed");
     if (result) {
         alert("You clicked Ok!")
     }
     document.write (" Happy to have you here");
 } else if (usersName =="Charlie") {
-    let result = confirm("Do you want to proceed");
+    let result = confirm("Thanks, Welcome to my page - Do you want to proceed");
     if (result) {
         alert("You clicked Ok!")
     }
     document.write (" Happy to have you here");
 } else if (usersName =="Barbie") {  
-    let result = confirm("Do you want to proceed");
+    let result = confirm("Thanks, Welcome to my page - Do you want to proceed");
     if (result) {
         alert("You clicked Ok!")
     }
     document.write (" Happy to have you here");
 } else if (usersName =="Stranger") {
-    let result = confirm("Do you want to proceed");
+    let result = confirm("Thanks, Welcome to my page - Do you want to proceed");
     if (result) {
         alert("You clicked Ok!")
     }
