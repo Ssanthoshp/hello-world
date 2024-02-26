@@ -20,7 +20,7 @@ if(acceptedNames.includes(usersName))
 return usersName;
 }
 }
-
+ 
 
 // console.log(theirName);
 
